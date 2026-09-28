@@ -8,19 +8,19 @@ async function verifyCertificate() {
             "<p>⚠️ Please enter Certificate ID.</p>";
         return;
     }
-
+    
     try {
 
-        const response = await fetch(
-            const response = await fetch(
-    `https://divorcee-lumping-flap.ngrok-free.dev/verify/${certId}`,
-    {
-        headers: {
-            "ngrok-skip-browser-warning": "true"
+    const response = await fetch(
+        `https://divorcee-lumping-flap.ngrok-free.dev/verify/${certId}`,
+        {
+            headers: {
+                "ngrok-skip-browser-warning": "true"
+            }
         }
-    }
-);
-        );
+    );
+
+   
 
         const data = await response.json();
 
