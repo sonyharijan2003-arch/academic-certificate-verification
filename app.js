@@ -12,7 +12,14 @@ async function verifyCertificate() {
     try {
 
         const response = await fetch(
-            `https://divorcee-lumping-flap.ngrok-free.dev/verify/${certId}`
+            const response = await fetch(
+    `https://divorcee-lumping-flap.ngrok-free.dev/verify/${certId}`,
+    {
+        headers: {
+            "ngrok-skip-browser-warning": "true"
+        }
+    }
+);
         );
 
         const data = await response.json();
