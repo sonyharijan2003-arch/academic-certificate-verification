@@ -12,7 +12,7 @@ async function verifyCertificate() {
     try {
 
         const response = await fetch(
-            `http://localhost:3000/verify/${certId}`
+            `https://divorcee-lumping-flap.ngrok-free.dev/verify/${certId}`
         );
 
         const data = await response.json();
