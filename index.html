@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blockchain Certificate Verification</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>🎓 Academic Certificate Verification</h1>
+                <p>Blockchain-Based Certificate Verification System</p>
+            </div>
+
+            <div class="blockchain-status">
+                <span class="status-dot"></span>
+                Blockchain Connected
+            </div>
+        </header>
+
+
+        <!-- Dashboard Cards -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="icon">📜</div>
+                <div>
+                    <h3>Certificates</h3>
+                    <p>Blockchain Records</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon">✅</div>
+                <div>
+                    <h3>Verified</h3>
+                    <p>Secure Verification</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon">⛓️</div>
+                <div>
+                    <h3>Blockchain</h3>
+                    <p>Ganache Network</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon">🔐</div>
+                <div>
+                    <h3>Security</h3>
+                    <p>Decentralized</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Verification Section -->
+            <section class="verification-card">
+
+                <div class="section-title">
+                    <span>🔍</span>
+                    <div>
+                        <h2>Verify Academic Certificate</h2>
+                        <p>Enter the certificate ID to verify its authenticity.</p>
+                    </div>
+                </div>
+
+                <div class="verify-form">
+
+                    <label for="certId">Certificate ID</label>
+
+                    <input
+                        type="number"
+                        id="certId"
+                        placeholder="Enter Certificate ID e.g. 1"
+                    >
+
+                    <button onclick="verifyCertificate()">
+                        🔎 Verify Certificate
+                    </button>
+
+                </div>
+
+                <!-- Result will appear here -->
+                <div id="result"></div>
+
+            </section>
+
+
+            <!-- Information Section -->
+            <section class="info-card">
+
+                <h2>⛓️ Blockchain Information</h2>
+
+                <div class="info-row">
+                    <span>Network</span>
+                    <strong>Ganache Local Blockchain</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Network ID</span>
+                    <strong>5777</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Verification Type</span>
+                    <strong>Smart Contract</strong>
+                </div>
+
+                <div class="info-row">
+                    <span>Data Security</span>
+                    <strong>Blockchain Based</strong>
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>Blockchain-Based Academic Certificate Verification System</p>
+            <p>Mini Project | Academic Demonstration</p>
+        </footer>
+
+    </div>
+
+
+    <!-- Ethers.js -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+
+    <!-- Your JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
